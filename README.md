@@ -112,28 +112,6 @@ The `error` parameter is used to pass an error code such that `error != false` i
     );
 
 
-## AJAX Functions Included
-
-Because AJAX requests are the root of much asynchrony in Javascript, promise.js provides the following functions:
-
-    promise.get(url, data, headers)
-    promise.post(url, data, headers)
-    promise.put(url, data, headers)
-    promise.del(url, data, headers)
-
-`data` *(optional)* : a {key: value} object or url-encoded string.
-
-`headers` *(optional)* :  a {key: value} object (e.g. `{"Accept", "application/json"}`).
-
-**Example**:
-
-    promise.get('/').then(function(error, result) {
-        if (!error) {
-            alert('The page contains ' + result.length + ' character(s).');
-        }
-    });
-
-
 ## Browser compatibility
 
 The library has been successfully tested on IE6+ and FF2+
